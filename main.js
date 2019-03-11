@@ -187,47 +187,49 @@
 //  console.log(obj);
 // ---------------------------------------------
 // ---------------------------------------------
-let data = {
-    list: [],
-    storage: [],
-    fillArray: function(n){
-        for (let i = 0; i < n; i++){
-            this.list[i] = Math.floor(Math.random()* 20);
-        }
-    },
-    renderArray: function(){
-        document.write(this.list, '<hr>');
-    },
-    setMaker: function(positionX, marker, id){ //!!!
-        if (!this.storage){
-            this.storage = {};
-        }
-        if (positionX < 0){
-            return console.error('Error');
-        }
-        this.storage[id] = {
-            pos: positionX,
-            marker: marker, //!!!
-            id: id,
-            oldValue: this.list[positionX],
-        };
-        this.list[positionX] = marker;
-    },
-    moveMarker: function(id, newX){
-                storageRecord = this.storage[id];
-                if (!storageRecord) return;
-                this.list[storageRecord.pos] = storageRecord.oldValue;
-                storageRecord.oldValue = this.list[newX];
-                storageRecord.pos = newX;
-                this.list[newX] = storageRecord.marker;
-                return;
-    }
-}
-data.fillArray(10);
-data.renderArray();
-data.setMaker(5, '&', 'm1');
-data.setMaker(3, '&', 'm2');
-data.renderArray();
-console.log(data.storage);
-data.moveMarker('m2', 9);
-data.renderArray();
+// let data = {
+//     list: [],
+//     storage: [],
+//     fillArray: function(n){
+//         for (let i = 0; i < n; i++){
+//             this.list[i] = Math.floor(Math.random()* 20);
+//         }
+//     },
+//     renderArray: function(){
+//         document.write(this.list, '<hr>');
+//     },
+//     setMaker: function(positionX, marker, id){ //!!!
+//         if (!this.storage){
+//             this.storage = {};
+//         }
+//         if (positionX < 0){
+//             return console.error('Error');
+//         }
+//         this.storage[id] = {
+//             pos: positionX,
+//             marker: marker, //!!!
+//             id: id,
+//             oldValue: this.list[positionX],
+//         };
+//         this.list[positionX] = marker;
+//     },
+//     moveMarker: function(id, newX){
+//                 storageRecord = this.storage[id];
+//                 if (!storageRecord) return;
+//                 this.list[storageRecord.pos] = storageRecord.oldValue;
+//                 storageRecord.oldValue = this.list[newX];
+//                 storageRecord.pos = newX;
+//                 this.list[newX] = storageRecord.marker;
+//                 return;
+//     }
+// }
+// data.fillArray(10);
+// data.renderArray();
+// data.setMaker(5, '&', 'm1');
+// data.setMaker(3, '&', 'm2');
+// data.renderArray();
+// console.log(data.storage);
+// data.moveMarker('m2', 9);
+// data.renderArray();
+// ---------------------------------------------
+// ---------------------------------------------
