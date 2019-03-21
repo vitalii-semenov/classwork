@@ -233,26 +233,30 @@
 // data.renderArray();
 // ---------------------------------------------
 // ---------------------------------------------
-function C1(){
-}
-function C2(){
-}
-C2.prototype = Object.create(C1.prototype);
-function C3(){
-}
-C3.prototype = Object.create(C2.prototype);
-C3.prototype.newArr = function(len){
-    this.list = new Array(len);
-}
-C2.prototype.fillArr = function(from, to){
-    for(let i = 0; i < this.list.length; i++){
-        this.list[i] = Math.floor(Math.random()*(to - from) + from);
-    }
-}
-C1.prototype.renderArr = function(){
-    console.log(this.list);
-}
-let p = new C3();
-p.newArr(20);
-p.fillArr(10, 50);
-p.renderArr();
+// function C1(){
+// }
+// function C2(){
+// }
+// C2.prototype = Object.create(C1.prototype);
+// function C3(){
+// }
+// C3.prototype = Object.create(C2.prototype);
+// C3.prototype.newArr = function(len){
+//     this.list = new Array(len);
+// }
+// C2.prototype.fillArr = function(from, to){
+//     for(let i = 0; i < this.list.length; i++){
+//         this.list[i] = Math.floor(Math.random()*(to - from) + from);
+//     }
+// }
+// C1.prototype.renderArr = function(){
+//     console.log(this.list);
+// }
+// let p = new C3();
+// p.newArr(20);
+// p.fillArr(10, 50);
+// p.renderArr();
+// ---------------------------------------------
+// ---------------------------------------------
+// Лямбда віражение = стрелочная функция(arrow function)
+  
