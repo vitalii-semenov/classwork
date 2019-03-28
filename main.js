@@ -244,6 +244,7 @@
 // C3.prototype.newArr = function(len){
 //     this.list = new Array(len);
 // }
+
 // C2.prototype.fillArr = function(from, to){
 //     for(let i = 0; i < this.list.length; i++){
 //         this.list[i] = Math.floor(Math.random()*(to - from) + from);
