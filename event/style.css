@@ -5,17 +5,26 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
+.menu-inner{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
 .menu-list{
     margin: 5px;
+    display: inline-block;
 }
-.menu-list-text{
+.menu-first-item{
+    cursor: pointer;
     display: inline-block;
     padding: 5px;
     border: 1px solid black;
+
 }
-.menu-list-text:nth-child(n+2){
+.menu-list-text{
+    cursor: pointer;
     display: none;
-}
-.menu-list:hover .menu-list-text{
-    display: inline-block;
+    padding: 5px;
+    border: 1px solid black;
 }
